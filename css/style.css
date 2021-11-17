@@ -1,0 +1,471 @@
+/*Fonte Global*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+/*PAGINA HOME*/
+
+/*Configuração global do site*/
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+/*Cabeçalho do site*/
+header {
+  background: rgb(85, 180, 148);
+  width: 100%;
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 100px;
+}
+/*Logo do cabeçalho*/
+header img {
+  width: 180px;
+  padding: 0;
+  margin: 0;
+}
+/*Menu cabeçalho*/
+header nav {
+  align-items: center;
+}
+
+header nav,
+ul {
+  display: flex;
+  list-style: none;
+}
+
+.bt-home {
+  color: white;
+  text-decoration: none;
+  margin-right: 10px;
+  background-color: #9370dd;
+  padding: 10px 20px;
+  border-radius: 25px;
+}
+
+.bt-home:hover {
+  color: #9370dd;
+  background-color: white;
+}
+
+nav li a {
+  color: white;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 500;
+  padding: 5px 5px;
+}
+
+nav li a:hover {
+  color: #9370dd;
+}
+
+nav li {
+  margin: 0 10px;
+}
+/*Banner do site*/
+.banner-home {
+  background: aquamarine;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 50px 100px;
+}
+/*Texto do banner*/
+.banner-home-left h2 {
+  font-size: 60px;
+  line-height: 110%;
+  color: #9370dd;
+}
+
+.banner-home-left p {
+  max-width: 500px;
+  font-size: 20px;
+  line-height: 160%;
+  color: grey;
+  margin: 10px;
+}
+.banner-home-right img {
+  height: 512px;
+  width: auto;
+}
+
+/*Botões do Banner*/
+.banner-botoes {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.banner-botao-left a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  height: 60px;
+  border-radius: 50px;
+  background-color: rgb(173, 134, 252);
+  text-decoration: none;
+  color: white;
+  margin: 20px;
+  font-weight: bold;
+}
+
+.banner-botao-left a:hover {
+  background-color: rgb(200, 176, 250);
+  text-decoration: none;
+  color: white;
+}
+
+.banner-botao-right a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  height: 60px;
+  border-radius: 50px;
+  background-color: aquamarine;
+  text-decoration: none;
+  color: rgb(173, 134, 252);
+  margin: 20px;
+  font-weight: bold;
+  border: 3px solid rgb(173, 134, 252);
+}
+
+.banner-botao-right a:hover {
+  border: 3px solid rgb(200, 176, 250);
+  color: rgb(200, 176, 250);
+}
+
+/*Seção 01 da Home*/
+.home-sec1 {
+  background-color: white;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px 100px;
+}
+
+.home-sec1-right {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  width: auto;
+  align-items: flex-end;
+  text-align: right;
+}
+
+.home-sec1-right h2 {
+  text-align: right;
+  font-size: 60px;
+  line-height: 110%;
+  color: #9370dd;
+}
+
+.home-sec1-right p {
+  max-width: 750px;
+  font-size: 20px;
+  line-height: 160%;
+  color: grey;
+  margin: 10px;
+}
+
+/*Seção 02 da Home*/
+.home-sec2 {
+  background-color: aquamarine;
+  width: 100%;
+  align-items: center;
+  text-align: center;
+  padding: 50px 100px;
+  color: grey;
+}
+
+.home-sec2 h2 {
+  font-size: 60px;
+  line-height: 110%;
+  color: #9370dd;
+}
+
+.home-sec2-box p {
+  max-width: 350px;
+  font-size: 20px;
+  text-align: justify;
+}
+
+main.home-sec2-boxs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+main.home-sec2-boxs section.home-sec2-box {
+  margin: 50px 50px;
+  padding: 10px 20px;
+}
+
+main.home-sec2-boxs section.home-sec2-box span {
+  font-weight: 700;
+  font-size: 30px;
+  display: block;
+}
+
+/*Seção 03 da Home*/
+.home-sec3 {
+  background-color: white;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px 100px;
+}
+
+.home-sec3-left h2 {
+  font-size: 60px;
+  line-height: 110%;
+  color: #9370dd;
+}
+
+.home-sec3-left p {
+  max-width: 750px;
+  font-size: 20px;
+  line-height: 160%;
+  color: grey;
+  margin: 10px;
+}
+
+.home-sec3-left a {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  height: 60px;
+  border-radius: 50px;
+  background-color: rgb(173, 134, 252);
+  text-decoration: none;
+  color: white;
+  margin: 20px;
+  font-weight: bold;
+}
+
+.home-sec3-left a:hover {
+  background-color: rgb(200, 176, 250);
+}
+
+/*Seção 04 da Home*/
+.home-sec4 {
+  background: aquamarine;
+  padding: 50px 100px;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  color: grey;
+}
+
+.home-sec4 h2 {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 60px;
+  line-height: 110%;
+  color: #9370dd;
+}
+
+.home-sec4 h3 {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-weight: 600;
+  font-size: 30px;
+}
+
+main.cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+main.cards section.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background: white;
+  padding: 1rem 1.5rem;
+  margin: 30px 30px;
+  border-radius: 25px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  /*box-shadow: rgba(137, 46, 240, 0.4) 5px 5px, rgba(153, 46, 240, 0.3) 10px 10px,
+    rgba(146, 46, 240, 0.2) 15px 15px, rgba(130, 46, 240, 0.1) 20px 20px,
+    rgba(120, 46, 240, 0.05) 25px 25px;*/
+}
+
+main.cards section.card span {
+  color: mediumpurple;
+  font-weight: 700;
+  font-size: 30px;
+}
+
+main.cards section.card p:first-letter {
+  color: mediumpurple;
+  font-weight: 900;
+  font-size: 20px;
+}
+
+main.cards section.card a.botao {
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 25px;
+  margin: 20px;
+  font-weight: 600;
+  background: rgb(173, 134, 252);
+  color: white;
+  box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+}
+
+main.cards section.card a.botao:hover {
+  font-weight: 600;
+  background: rgb(200, 176, 250);
+  color: white;
+  box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+}
+
+main.cards section.card h4 {
+  font-weight: 700;
+  font-size: 35px;
+  color: rgb(147, 112, 216);
+}
+
+/*Seção 05 da Home*/
+.home-sec5 {
+  background-color: white;
+  width: 100%;
+  align-items: center;
+  text-align: center;
+  padding: 50px 100px;
+  color: grey;
+}
+
+.home-sec5 h2 {
+  font-size: 60px;
+  line-height: 110%;
+  color: #9370dd;
+}
+
+.home-sec5 h3 {
+  font-weight: 600;
+  font-size: 30px;
+}
+
+main.vets {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+main.vets section.vet {
+  /*flex-direction: column;*/
+  margin: 50px 50px;
+  padding: 10px 20px;
+  background: #7fffd4;
+  border-radius: 25px;
+  text-align: center;
+  box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px,
+    rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px,
+    rgba(0, 0, 0, 0.07) 0px 16px 16px;
+}
+
+main.vets section.vet span {
+  font-weight: 700;
+  font-size: 30px;
+  display: block;
+  color: #9370dd;
+}
+
+main.vets section.vet a {
+  flex-direction: row;
+  text-decoration: none;
+  text-align: left;
+  border: none;
+  outline: none;
+}
+
+main.vets section.vet a img {
+  margin: 20px 15px;
+  border: none;
+}
+
+/*Rodapé*/
+footer {
+  background: aquamarine;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 10px 100px;
+}
+
+footer .boxs {
+  width: 320px;
+  min-height: 150px;
+  padding: 20px;
+}
+
+footer .boxs:nth-child(4) {
+  width: 400px;
+}
+
+.boxs h2 {
+  color: #9370dd;
+  margin-bottom: 20px;
+}
+
+.boxs ul {
+  display: flex;
+  flex-direction: column;
+}
+
+.boxs ul li {
+  margin: 0px;
+  list-style: none;
+}
+
+.boxs ul li a {
+  color: grey;
+  text-decoration: none;
+}
+
+.boxs ul li a:hover {
+  color: rgb(211, 211, 211);
+}
+
+.boxs p {
+  color: grey;
+}
+
+.boxs a img {
+  margin: 10px 5px;
+}
+
+.footer {
+  padding: 5px 100px;
+  background-color: #55b494;
+  text-align: center;
+  align-items: center;
+  color: white;
+}
+
+.footer h2 p {
+  font-size: 20px;
+}
