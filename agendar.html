@@ -15,14 +15,94 @@
     <ul> <!--menu do cabeçalho-->
       <li><a href="/home.html">Home</a></li>
       <li><a href="/sobre.html">Sobre</a></li>
+      <li><a href="/servicos.html">Serviços</a></li>
       <li><a href="/contato.html">Contato</a></li>
     </ul>
     <a href="/agendar.html" class="bt-home">Agendar</a>
   </nav>
 </header> 
-<!--Seção 01 do contato-->
-<div class="sec01-contato">
-<h1>AGENDAMENTO</h1>
+<!--Seção 01 do agenda-->
+<div class="container">,
+  <h1>Cadastre-se e <br>Agende sua Consulta</h1>
+<form novalidate>
+<div class="row">
+  <div class="col-sm">
+    <div class="form-field">
+      <div class="form-field__control">
+        <label for="firstname" class="form-field__label">Nome</label>
+        <input id="firstname" type="text" class="form-field__input" />
+      </div>
+    </div>
+  </div>
+  <div class="col-sm">
+    <div class="form-field">
+      <div class="form-field__control">
+        <label for="lastname"class="form-field__label">Sobrenome</label>
+        <input id="lastname" type="text" class="form-field__input" />
+      </div>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="col-sm">
+    <div class="form-field">
+      <div class="form-field__control">
+        <label for="email" class="form-field__label">Email</label>
+        <input id="email" type="email" class="form-field__input" />
+      </div>
+    </div>
+  </div>
+</div>
+<div class="row">
+    <div class="col-sm">
+      <div class="form-field">
+        <div class="form-field__control">
+          <label for="tel" class="form-field__label">Telefone</label>
+          <input id="tel" type="email" class="form-field__input" />
+        </div>
+      </div>
+    </div>
+  </div>
+<div class="row">
+  <div class="col-sm">
+    <div class="form-field">
+      <div class="form-field__control">
+        <label for="street"class="form-field__label">Endereço</label>
+        <input id="street" type="text" class="form-field__input" />
+      </div>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="col-sm">
+    <div class="form-field">
+      <div class="form-field__control">
+        <label for="zip"class="form-field__label">CEP</label>
+        <input id="zip" type="text" class="form-field__input" />
+      </div>
+    </div>
+  </div>
+  <div class="col-sm">
+    <div class="form-field">
+      <div class="form-field__control">
+        <label for="city"class="form-field__label">Cidade</label>
+        <input id="city" type="text" class="form-field__input" />
+      </div>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="col-sm">
+    <div class="form-field">
+      <div class="form-field__control">
+        <label for="additionalInfo" class="form-field__label">Informação Adicional</label>
+        <textarea id="additionalInfo" class="form-field__textarea"></textarea>
+      </div>
+    </div>      
+  </div>
+</div>
+<a href="#" title="Leia mais">Enviar</a>
+</form>
 </div>
 <!--Rodapé-->
 <footer>
@@ -66,5 +146,6 @@
 <div class="footer">
 <p>Copyright © 2021 AV Unigranrio | Criado por Leonardo Linton</p>
 </div>
+<script src="/js/script.js"></script>
 </body>
 </html>

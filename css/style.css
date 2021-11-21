@@ -1,7 +1,7 @@
 /*Fonte Global*/
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
-/*PAGINA HOME*/
+/*--------------------------------PAGINA HOME--------------------------------*/
 
 /*Configuração global do site*/
 * {
@@ -12,7 +12,7 @@
 }
 /*Cabeçalho do site*/
 header {
-  background: rgb(85, 180, 148);
+  background: #7fffd4;
   width: 100%;
   flex-wrap: wrap;
   display: flex;
@@ -29,6 +29,7 @@ header img {
 /*Menu cabeçalho*/
 header nav {
   align-items: center;
+  font-weight: 600;
 }
 
 header nav,
@@ -47,20 +48,20 @@ ul {
 }
 
 .bt-home:hover {
-  color: #9370dd;
-  background-color: white;
+  color: white;
+  background-color: rgb(200, 176, 250);
 }
 
 nav li a {
-  color: white;
+  color: #9370dd;
   text-decoration: none;
   font-size: 15px;
-  font-weight: 500;
+  /*font-weight: 600;*/
   padding: 5px 5px;
 }
 
 nav li a:hover {
-  color: #9370dd;
+  color: rgb(200, 176, 250);
 }
 
 nav li {
@@ -109,7 +110,7 @@ nav li {
   width: 150px;
   height: 60px;
   border-radius: 50px;
-  background-color: rgb(173, 134, 252);
+  background-color: #9370dd;
   text-decoration: none;
   color: white;
   margin: 20px;
@@ -131,10 +132,10 @@ nav li {
   border-radius: 50px;
   background-color: aquamarine;
   text-decoration: none;
-  color: rgb(173, 134, 252);
+  color: #9370dd;
   margin: 20px;
   font-weight: bold;
-  border: 3px solid rgb(173, 134, 252);
+  border: 3px solid #9370dd;
 }
 
 .banner-botao-right a:hover {
@@ -172,6 +173,7 @@ nav li {
   max-width: 750px;
   font-size: 20px;
   line-height: 160%;
+  text-align: justify;
   color: grey;
   margin: 10px;
 }
@@ -303,11 +305,7 @@ main.cards section.card {
   padding: 1rem 1.5rem;
   margin: 30px 30px;
   border-radius: 25px;
-  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
-    rgba(0, 0, 0, 0.22) 0px 15px 12px;
-  /*box-shadow: rgba(137, 46, 240, 0.4) 5px 5px, rgba(153, 46, 240, 0.3) 10px 10px,
-    rgba(146, 46, 240, 0.2) 15px 15px, rgba(130, 46, 240, 0.1) 20px 20px,
-    rgba(120, 46, 240, 0.05) 25px 25px;*/
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.185);
 }
 
 main.cards section.card span {
@@ -381,9 +379,7 @@ main.vets section.vet {
   background: #7fffd4;
   border-radius: 25px;
   text-align: center;
-  box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px,
-    rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px,
-    rgba(0, 0, 0, 0.07) 0px 16px 16px;
+  box-shadow: 7px 7px 15px rgba(0, 0, 0, 0.158);
 }
 
 main.vets section.vet span {
@@ -452,6 +448,7 @@ footer .boxs:nth-child(4) {
 
 .boxs p {
   color: grey;
+  text-align: justify;
 }
 
 .boxs a img {
@@ -468,4 +465,185 @@ footer .boxs:nth-child(4) {
 
 .footer h2 p {
   font-size: 20px;
+}
+/*--------------------------------PAGINA DE AGENDAMENTO--------------------------------*/
+
+.container {
+  margin: 0 auto 35px;
+  max-width: 450px;
+  justify-content: center;
+  align-items: center;
+}
+
+.container h1 {
+  text-align: center;
+  color: #9370dd;
+  margin: 0 auto 35px;
+  max-width: 450px;
+  font-size: 35px;
+}
+
+.container a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  height: 60px;
+  border-radius: 50px;
+  background-color: rgb(173, 134, 252);
+  text-decoration: none;
+  color: white;
+  margin: 0;
+  font-weight: bold;
+}
+.container a:hover {
+  background-color: rgb(200, 176, 250);
+}
+
+.form-field {
+  display: block;
+  margin-bottom: 16px;
+}
+.form-field--is-active .form-field__control::after {
+  border-bottom: 3px solid #9370dd;
+  transform: scaleX(150);
+}
+.form-field--is-active .form-field__label {
+  color: #9370dd;
+  font-size: 0.75rem;
+  transform: translateY(-14px);
+}
+.form-field--is-filled .form-field__label {
+  font-size: 0.75rem;
+  transform: translateY(-14px);
+}
+
+.form-field__label {
+  display: block;
+  font-size: 1.2rem;
+  font-weight: normal;
+  left: 0;
+  margin: 0;
+  padding: 18px 12px 0;
+  position: absolute;
+  top: 0;
+  transition: all 0.4s;
+  width: 100%;
+}
+
+.form-field__control {
+  background: #eee;
+  border-radius: 8px 8px 0 0;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+.form-field__control::after {
+  border-bottom: 3px solid #9370dd;
+  bottom: 0;
+  content: "";
+  display: block;
+  left: 0;
+  margin: 0 auto;
+  position: absolute;
+  right: 0;
+  transform: scaleX(0);
+  transition: all 0.4s;
+  width: 1%;
+}
+
+.form-field__input,
+.form-field__textarea {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: transparent;
+  border: 0;
+  border-bottom: 3px solid #7fffd4;
+  color: grey;
+  display: block;
+  font-size: 1.2rem;
+  margin-top: 24px;
+  outline: 0;
+  padding: 0 12px 10px 12px;
+  width: 100%;
+}
+
+.form-field__textarea {
+  height: 150px;
+}
+/*--------------------------------PAGINA DE CONTATO--------------------------------*/
+/*Seção 01 do Contato*/
+.sec01-contato {
+  background-color: white;
+  width: 100%;
+  align-items: center;
+  text-align: center;
+  padding: 50px 100px;
+  color: #9370dd;
+}
+
+.sec01-contato h2 {
+  font-size: 60px;
+  line-height: 110%;
+  color: #9370dd;
+}
+
+.sec01-contato h3 {
+  font-weight: 600;
+  font-size: 30px;
+}
+
+main.contato-boxs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+main.contato-boxs section.contato-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 50px 10px;
+  width: 300px;
+  height: 250px;
+  background: #7fffd4;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 25px;
+  text-align: center;
+  box-shadow: 7px 7px 15px rgba(0, 0, 0, 0.158);
+}
+
+main.contato-boxs section.contato-box span {
+  font-weight: 700;
+  font-size: 30px;
+  display: block;
+  color: #9370dd;
+}
+
+.contato-box-redes a img {
+  align-items: center;
+  padding: auto;
+  margin: 0 10px;
+  border: none;
+}
+/*Seção 02 do Contato*/
+.sec02-contato h4 {
+  align-items: center;
+  text-align: center;
+  margin: 20px;
+  font-size: 30px;
+  color: #9370dd;
+}
+
+/* Set the size of the div element that contains the map */
+#map {
+  height: 500px;
+  /* The height is 400 pixels */
+  width: 100%;
+  /* The width is the width of the web page */
 }
