@@ -5,26 +5,99 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/style.css">
-  <title>Contato</title>
+  <title>Serviços</title>
 </head>
 <body>
 <!--Inicio do cabeçalho-->
-  <header> 
-    <a href="/home.html"><img src="img/logo-vida-pet.png"></a> <!--Logo-->
-    <nav>
-      <ul> <!--menu do cabeçalho-->
-        <li><a href="/home.html">Home</a></li>
-        <li><a href="/sobre.html">Sobre</a></li>
-        <li><a href="/servicos.html">Serviços</a></li>
-        <li><a href="/contato.html">Contato</a></li>
+<header>
+  <nav>
+      <a href="/home.html" class="logo"><img src="/img/logo-vida-pet.png"></a>
+      <div class="mobile-menu">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+      </div>
+      <ul class="nav-list">
+          <li><a href="/home.html">Home</a></li>
+          <li><a href="/sobre.html">Sobre</a></li>
+          <li><a href="/servicos.html">Serviços</a></li>
+          <li><a href="/contato.html">Contato</a></li>
+          <li><a href="/agendar.html" class="bt-home">Agendar</a></li>
       </ul>
-      <a href="/agendar.html" class="bt-home">Agendar</a>
-      </ul>
-    </nav>
-  </header> 
+  </nav>
+</header>
 <!--Seção 01 do contato-->
-<div class="sec01-contato">
-  <h1>SERVIÇOS</h1>
+<div class="sec01-servicos">
+  <h2>Nossos Serviços</h2>
+  <h3>Confira abaixo todos os serviços que oferecemos em nossas unidades</h3>
+  <main class="servicos-boxs">
+    <section class="servicos-box">
+      <img src="/img/exame.png" alt="Serviços">
+      <span>Exames Laboratoriais</span>
+      <p>Nosso laboratório realiza uma
+        grande variedade de análises,
+        tais como: hematologia,
+        dosagem bioquímica, dosagem hormonal, 
+        sorologia, cultura, citologia, urinálise, exame parasitológico 
+        de fezes, histopatologia e diagnóstico molecular. </p> <br>
+      <p>Possuímos uma estrutura moderna que nos possibilita receber 
+        amostras internas e externas. </p> <br>
+      <p>Logo, oferecemos um resultado rápido e preciso através do nosso 
+        sistema de comunicação interna.</p>
+    </section>
+    <section class="servicos-box">
+      <img src="/img/vacina.png" alt="Cirurgia">
+      <span>Cirurgia Geral</span>
+      <p>A cirurgia veterinária é a solução para casos que não possuem outra 
+        alternativa e tem como objetivo principal promover a cura e melhorar 
+        a qualidade de vida do pet.</p> <br>
+      <p>Para que o procedimento seja realizado da forma correta e com sucesso, 
+        oferecemos uma estrutura extremamente com equipamentos extremamente modernos 
+        e uma equipe de cirurgiões especializados.</p><br>
+    </section>
+    <section class="servicos-box">
+      <img src="/img/ultrassonografia.png" alt="Diagnóstico">
+      <span>Diagnóstico por Imagem Ultrassonográfica</span>
+      <p>Este é um método de diagnóstico largamente utilizado na medicina veterinária, 
+        por ser uma técnica moderna, precisa e não invasiva. </p> <br>
+      <p>Para realizar este procedimento com segurança e qualidade, contamos com um corpo 
+        técnico que é composto por médicos veterinários especialistas em diagnóstico por 
+        imagem através de ultrassonografia, auxiliando mais rapidamente na busca pelo 
+        diagnóstico e tratamentos corretos.</p> <br>
+      <p>Este setor atende tanto pacientes internos quanto externos.</p> <br>
+    </section>
+    <section class="servicos-box">  
+      <img src="/img/cachorro.png" alt="cachorro">
+      <span>Internação Cães</span>
+      <p>Todas as nossas unidades possuem um setor de internação 24 horas exclusivo para 
+        cães que necessitam de assistência e tratamento intensivo. </p> <br>
+      <p>O animal será assistido por uma equipe exclusiva da área da internação e terá acesso 
+        a todos os recursos necessários para a completa estabilização de seu estado de saúde.</p> <br>
+    </section>
+    <section class="servicos-box">  
+      <img src="/img/radiografia.png" alt="radiografia">
+      <span>Diagnóstico por Imagem Radiográfica</span>
+      <p>A radiografia é utilizada nas análises das condições dos órgãos internos, 
+        pesquisas de fraturas, diagnóstico de tumores, doenças ósseas, entre outras afecções.</p> <br>
+      <p>Para realizar esse procedimento com segurança e qualidade, contamos com um corpo 
+        técnico que é composto por médicos veterinários especialistas em diagnóstico por 
+        imagem através de raio x, 100% preparados para atender tanto nossos pacientes, 
+        quanto pacientes externos.</p>
+    </section>
+    <section class="servicos-box">  
+      <img src="/img/gato.png" alt="gato">
+      <span>Internação Gatos</span>
+      <p>Os felinos possuem características próprias e exigem cuidados especiais. Por isso, 
+        todas as nossas unidades contam com um setor de internação 24h exclusivo para gatos 
+        que necessitam de assistência e tratamento intensivo.</p> <br>
+      <p>Para este setor, contamos com uma equipe veterinária qualificada e exclusiva durante 
+        todo o período e com equipamentos de última geração.</p>
+    </section>
+  </main>
+<!--Seção 01 Botão-->
+</div>
+<div class="sec02-servicos">
+  <a href="/agendar.html" title="Leia mais" class="bt-serviços">Faça um Agendamento</a>
 </div>
 <!--Rodapé-->
   <footer>
@@ -54,11 +127,9 @@
     </div>
     <div class="boxs">
       <h2>Sobre nós</h2>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-        Maxime minus doloribus suscipit. Ullam, labore! 
-        Iste voluptatem dolores esse odio, culpa consequatur. 
-        Ipsa, quia? Itaque rem tempore atque corporis. 
-        Id, assumenda.</p>
+      <p>Gatinhos e cachorros peludos precisam de amor e afeição constantes, mas eles retribuem mais. 
+        Eles se tornam seus amigos para o resto da vida. Nós do Vida PET Center tentamos fornecer ajuda 
+        completa no desenvolvimento de seus amigos de quatro patas.</p>
       <a href="#"><img src="/img/facebook.png"></a>
       <a href="#"><img src="/img/instagram.png"></a>
       <a href="#"><img src="/img/twitter.png"></a>
@@ -68,5 +139,7 @@
 <div class="footer">
   <p>Copyright © 2021 AV Unigranrio | Criado por Leonardo Linton</p>
 </div>
+<!--JavaScript-->
+<script src="/js/script.js"></script>
 </body>
 </html>
